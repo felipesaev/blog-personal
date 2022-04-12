@@ -2,6 +2,8 @@ import { writeFileSync } from 'fs';
 import { globby } from 'globby';
 import prettier from 'prettier';
 
+//TODO verificar este arquivo
+
 async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js');
   const pages = await globby([

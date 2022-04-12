@@ -4,6 +4,8 @@ import {
   makeSource
 } from 'contentlayer/source-files';
 
+//TODO verificar este arquivo
+
 import readingTime from 'reading-time';
 import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';

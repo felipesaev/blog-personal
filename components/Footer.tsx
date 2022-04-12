@@ -60,6 +60,10 @@ export default function Footer() {
           </Link>
         </div>
       </div>
+        <hr className="w-full border-1 border-gray-150 dark:border-gray-800 mb-8" />
+        <p className="text-sm text-gray-800 dark:text-gray-200">
+        Inspiring by <ExternalLink href="https://leerob.io/">Lee Robisson</ExternalLink>
+        </p>
     </footer>
   );
 }
