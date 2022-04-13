@@ -7,92 +7,50 @@ import avatarBW from 'public/avatar.png';
 
 export default function About() {
   return (
-    <Container title="About – Felipe Costa">
+    <Container title="Sobre – Felipe Costa">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          About Me
+          Sobre mim
         </h1>
         <div className="mb-8 prose dark:prose-dark leading-6">
           <h2>Links</h2>
           <ul>
             <li>
-              Twitter: <a href="https://twitter.com/leeerob">@leeerob</a>
+              Twitter:{' '}
+              <a href="https://twitter.com/@felipe_scost">@felipe_scost</a>
             </li>
             <li>
-              GitHub: <a href="https://github.com/leerob">@leerob</a>
+              GitHub: <a href="https://github.com/felipesaev">@felipesaev</a>
             </li>
             <li>
               Website:{' '}
-              <Link href="https://leerob.io">
-                <a>https://leerob.io</a>
+              <Link href="https:///thatsallfolks.dev">
+                <a>https://thatsallfolks.dev</a>
               </Link>
             </li>
             <li>
               LinkedIn:{' '}
-              <a href="https://www.linkedin.com/in/leeerob/">
-                https://www.linkedin.com/in/leeerob
+              <a href="https://www.linkedin.com/in/felipeds-cost/">
+                https://www.linkedin.com/in/felipeds-cost/
               </a>
             </li>
           </ul>
           <h2>Bio</h2>
-          <h3>Job Title</h3>
-          <p>Felipe Costa, Director of Developer Relations at Vercel</p>
-          <h3>Long, 3rd Person</h3>
+          <h3>Titulo do trabaho</h3>
+          <p>Felipe Costa, FrontEnd Developer</p>
           <p>
-            Felipe Costa is the Director of Developer Relations at{' '}
-            <a href="http://vercel.com/">Vercel</a>, where he helps developers
-            build a faster web and leads the Next.js community. Prior to that,
-            Lee was a Senior Software Engineer focused on the frontend. An
-            educator, writer, and speaker, Lee has also created extensive
-            courses on React and Next.js.
+            Olá, me chamo Felipe. Atualmente trabalho como desenvolvedor
+            FrontEnd no <a href="https://getninjas.com.br/">Getninjas SA</a>,
+            onde minha equipe é responsável na construção de páginas web com
+            foco em performace. contínuo aprimorando meus conhecimentos e sou
+            apaixonado por desenvolvimento frontend.
           </p>
-          <h3>Long, 1st Person</h3>
+
+          <h3>Educação</h3>
           <p>
-            Hey, I'm Lee. I lead Developer Relations at{' '}
-            <a href="https://vercel.com/">Vercel</a>, where my team helps
-            developers build a faster web. I'm a Next.js contributor and help
-            lead our open-source communities. I've passionate about frontend
-            development and have created courses on React, Next.js, and web
-            development. I'm an advisor and investor in early stage startups.
+            Felipe Costa finalizando meu curso de Analise e desenvolvimento de
+            sistemas pela faculdade Cruzeiro do Sul.
           </p>
-          <h3>Short, 3rd Person</h3>
-          <p>
-            Felipe Costa is the Director of Developer Relations at{' '}
-            <a href="http://vercel.com/">Vercel</a>, where he helps developers
-            build a faster web.
-          </p>
-          <h3>Short, 1st Person</h3>
-          <p>
-            Hey, I'm Lee. I lead Developer Relations at{' '}
-            <a href="https://vercel.com/">Vercel</a>, where my team helps
-            developers build a faster web.
-          </p>
-          <h3>Education</h3>
-          <p>
-            Felipe Costa graduated from Iowa State University with a BS in
-            Computer Engineering.
-          </p>
-          <h2>Headshots</h2>
-          <div className="flex space-x-8">
-            <a href="/avatar.png">
-              <Image
-                alt="Felipe Costa headshot"
-                width={400}
-                quality={100}
-                src={avatar}
-                className="rounded-md"
-              />
-            </a>
-            <a href="/avatar.png">
-              <Image
-                alt="Felipe Costa headshot"
-                width={400}
-                quality={100}
-                src={avatarBW}
-                className="rounded-md"
-              />
-            </a>
-          </div>
         </div>
       </div>
     </Container>

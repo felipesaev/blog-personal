@@ -25,23 +25,23 @@ export default function Footer() {
           </Link>
           <Link href="/about">
             <a className="text-gray-500 hover:text-gray-600 transition">
-              About
+              Sobre mim
             </a>
           </Link>
-          <Link href="/newsletter">
+          {/* <Link href="/newsletter">
             <a className="text-gray-500 hover:text-gray-600 transition">
               Newsletter
             </a>
-          </Link>
+          </Link> */}
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://twitter.com/leeerob">
             Twitter
           </ExternalLink>
           <ExternalLink href="https://github.com/leerob">GitHub</ExternalLink>
-          <ExternalLink href="https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw">
+          {/* <ExternalLink href="https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw">
             YouTube
-          </ExternalLink>
+          </ExternalLink> */}
         </div>
         <div className="flex flex-col space-y-4">
           <Link href="/uses">
@@ -53,11 +53,11 @@ export default function Footer() {
               Snippets
             </a>
           </Link>
-          <Link href="/tweets">
+         {/*  <Link href="/tweets">
             <a className="text-gray-500 hover:text-gray-600 transition">
               Tweets
             </a>
-          </Link>
+          </Link> */}
         </div>
       </div>
         <hr className="w-full border-1 border-gray-150 dark:border-gray-800 mb-8" />

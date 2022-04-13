@@ -53,7 +53,7 @@ export default function BlogLayout({
           {children}
         </div>
        
-        <div className="text-sm text-gray-700 dark:text-gray-300">
+        {/* <div className="text-sm text-gray-700 dark:text-gray-300">
           <a
             href={discussUrl(post.slug)}
             target="_blank"
@@ -69,7 +69,7 @@ export default function BlogLayout({
           >
             {'Edit on GitHub'}
           </a>
-        </div>
+        </div> */}
       </article>
     </Container>
   );
