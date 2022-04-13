@@ -23,17 +23,13 @@ export default function Blog({
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
         </h1>
-        <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I've been writing online since 2014, mostly about web development and tech careers.
-            In total, I've written ${posts.length} articles on my blog.
-            Use the search below to filter by title.`}
-        </p>
+        
         <div className="relative w-full mb-4">
           <input
-            aria-label="Search articles"
+            aria-label="Procure artigos"
             type="text"
             onChange={(e) => setSearchValue(e.target.value)}
-            placeholder="Search articles"
+            placeholder="Procure artigos"
             className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
           />
           <svg
@@ -54,7 +50,7 @@ export default function Blog({
         {!searchValue && (
           <>
             <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
-              Most Popular
+              Mais populares
             </h3>
            {/*  <BlogPost
               title="Rust Is The Future of JavaScript Infrastructure"
@@ -74,11 +70,11 @@ export default function Blog({
           </>
         )}
         <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
-          All Posts
+          Todos os posts
         </h3>
         {!filteredBlogPosts.length && (
           <p className="mb-4 text-gray-600 dark:text-gray-400">
-            No posts found.
+            Nada foi encontrado
           </p>
         )}
         {filteredBlogPosts.map((post) => (
