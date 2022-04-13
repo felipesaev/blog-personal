@@ -48,11 +48,7 @@ export default function Footer() {
             <a className="text-gray-500 hover:text-gray-600 transition">Uses</a>
           </Link>
          
-          <Link href="/snippets">
-            <a className="text-gray-500 hover:text-gray-600 transition">
-              Snippets
-            </a>
-          </Link>
+        
          {/*  <Link href="/tweets">
             <a className="text-gray-500 hover:text-gray-600 transition">
               Tweets

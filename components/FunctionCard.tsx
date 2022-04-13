@@ -9,7 +9,7 @@ export default function FunctionCard({
   ...rest
 }) {
   return (
-    <Link href={`/snippets/${slug}`}>
+    <Link href={`/${slug}`}>
       <a
         className="border border-grey-200 dark:border-gray-800 rounded p-4 w-full bg-white dark:bg-gray-900"
         {...rest}
