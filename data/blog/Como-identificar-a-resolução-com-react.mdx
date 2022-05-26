@@ -14,7 +14,7 @@ Primeiro iremos importar dois hooks bem usados no reactJS, são eles:
 import { useState, useEffect } from 'react';
 ```
 
-Após isso iremos criar uma função para obter as dimenções. Para isso iremos precisar acessar o objeto ``window`` do navegador. 
+Após isso iremos criar uma função para obter as dimenções. Para isso iremos precisar acessar o objeto `window` do navegador. 
 
 ```js
 function getWindowDimensions() {
@@ -25,7 +25,7 @@ function getWindowDimensions() {
   };
 }
 ```
-Note que, renomeamos os valores originais do objeto ``window`` para simplificar. Veja um exemplo básico: 
+Note que, renomeamos os valores originais do objeto `window` para simplificar. Veja um exemplo básico: 
 ```js
 const person = { nameOriginal: 'Felipe', ageOriginal: 28 }
 
@@ -37,7 +37,7 @@ console.log(name) // Felipe
 console.log(age) // 28
 ```
 
-Dando continuidade, temos agora que criar de fato o nosso hook, sendo assim iremos precisar de dois hooks do react, ``useState`` e ``useEffect``, veja:
+Dando continuidade, temos agora que criar de fato o nosso hook, sendo assim iremos precisar de dois hooks do react, `useState` e `useEffect`, veja:
 
 ```js
 export default function useWindowDimensions() {
@@ -55,7 +55,7 @@ export default function useWindowDimensions() {
   return windowDimensions;
 }
 ```
-Perceba que criamos a função ``handleResize`` dentro do useEffect e alterar a função do ``useState``, a ``setWindowDimensions`` passando como parametro a função ``getWindowDimensions()`` e sempre que houver alguma mudança no evento ``resize``, que é disparado quando o document view é redimensionado, a função ``handleResize`` é chamada.
+Perceba que criamos a função `handleResize` dentro do useEffect e alterar a função do `useState`, a `setWindowDimensions` passando como parametro a função `getWindowDimensions()` e sempre que houver alguma mudança no evento `resize`, que é disparado quando o document view é redimensionado, a função `handleResize` é chamada.
 
 Depois disso, podemos utilizar o nosso hook dessa forma em qualquer componente.
 
