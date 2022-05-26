@@ -28,7 +28,7 @@ export default function Home({ videos }) {
               alt="Felipe Costa"
               height={176}
               width={176}
-              src="/avatar.png"
+              src="/perfil.jpg"
               className="rounded-full"
             />
           </div>
