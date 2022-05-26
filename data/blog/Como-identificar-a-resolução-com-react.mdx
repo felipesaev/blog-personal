@@ -1,0 +1,81 @@
+---
+title: 'Obtendo a largura e altura da tela com ReactJS'
+publishedAt: '2021-05-26'
+summary: 'ReactJS'
+---
+
+## Criando um Hook personalizado
+
+Antes de mais nada iremos criar um hook personalizado para nos fornecer os dados que precisamos. 
+
+Primeiro iremos importar dois hooks bem usados no reactJS, são eles:
+
+```js
+import { useState, useEffect } from 'react';
+```
+
+Após isso iremos criar uma função para obter as dimenções. Para isso iremos precisar acessar o objeto ``window`` do navegador. 
+
+```js
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+```
+Note que, renomeamos os valores originais do objeto ``window`` para simplificar. Veja um exemplo básico: 
+```js
+const person = { nameOriginal: 'Felipe', ageOriginal: 28 }
+
+console.log(person.nameOriginal) // Felipe
+
+const { nameOriginal: name, ageOriginal: age } = person
+
+console.log(name) // Felipe
+console.log(age) // 28
+```
+
+Dando continuidade, temos agora que criar de fato o nosso hook, sendo assim iremos precisar de dois hooks do react, ``useState`` e ``useEffect``, veja:
+
+```js
+export default function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return windowDimensions;
+}
+```
+Perceba que criamos a função ``handleResize`` dentro do useEffect e alterar a função do ``useState``, a ``setWindowDimensions`` passando como parametro a função ``getWindowDimensions()`` e sempre que houver alguma mudança no evento ``resize``, que é disparado quando o document view é redimensionado, a função ``handleResize`` é chamada.
+
+Depois disso, podemos utilizar o nosso hook dessa forma em qualquer componente.
+
+```js
+const Component = () => {
+  const { height, width } = useWindowDimensions();
+
+  return (
+    <div>
+      width: {width} ~ height: {height}
+    </div>
+  );
+}
+```
+
+O resultado voce pode obter [aqui](https://codesandbox.io/s/resolution-with-hooks-66cnt3?file=/src/hooks/useWindowDimensions.tsx).
+
+Espero que de alguma forma isto tenha ajudado. 
+
+Abraço.
+
+
+

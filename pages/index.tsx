@@ -43,25 +43,25 @@ export default function Home({ videos }) {
             gradient="from-[#D8B4FE] to-[#818CF8]"
           />
           <BlogPostCard
-            title="Preparando..."
-            slug="preparando"
+            title="Como identificar a resolução com ReactJS"
+            slug="Como-identificar-a-resolução-com-react"
             gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
-          />
-          <BlogPostCard
-            title="Preparando..."
-            slug="preparando"
-            gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
-          />
+          />          
         </div>
        
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
           Veja todos os posts
         </h3>
-       
+        Como-identificar-a-resolução-com-react
         <BlogPost
         title="Meu primeiro post no blog"
         summary="Aqui começa uma lnga caminhada de compartilhamento de conhecimentos e aprimoramento de códigos."
         slug="meu-primeiro-post-no-blog"
+      />
+      <BlogPost
+        title="Como identificar a resolução com ReactJS"
+        summary="Obtendo a dimensão da janela do seu navegador com ReactJS."
+        slug="Como-identificar-a-resolução-com-react"
       />
       
         <Link href="/blog">
