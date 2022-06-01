@@ -35,7 +35,7 @@ export default function BlogLayout({
               alt="Felipe Costa"
               height={24}
               width={24}
-              src="/avatar.png"
+              src="/perfil.jpg"
               className="rounded-full"
             />
             <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">

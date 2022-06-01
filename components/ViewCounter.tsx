@@ -1,11 +1,14 @@
 import { useEffect } from 'react';
 import useSWR from 'swr';
 
-import fetcher from 'lib/fetcher';
-import { Views } from 'lib/types';
+async function fetcher(...args: any) {  
+  const res = await fetch(...args);
+
+  return res.json();
+}
 
 export default function ViewCounter({ slug }) {
-  const { data } = useSWR<Views>(`/api/views/${slug}`, fetcher);
+  const { data } = useSWR(`/api/views/${slug}`, fetcher);
   const views = new Number(data?.total);
 
   useEffect(() => {
