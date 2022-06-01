@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import useSWR from 'swr';
 
 async function fetcher(...args: any) {  
-  const res = await fetch(...args);
+  const res = await fetch(args);
 
   return res.json();
 }
