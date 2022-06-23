@@ -2,8 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import Container from 'components/Container';
-import avatar from 'public/avatar.png';
-import avatarBW from 'public/avatar.png';
 
 export default function About() {
   return (
@@ -40,7 +38,7 @@ export default function About() {
           <p>Felipe Costa, FrontEnd Developer</p>
           <p>
             Olá, me chamo Felipe. Atualmente trabalho como desenvolvedor
-            FrontEnd no <a href="https://getninjas.com.br/">Getninjas SA</a>,
+            FrontEnd no <a href="https://sicredi.com.br/">Sicredi</a>,
             onde minha equipe é responsável na construção de páginas web com
             foco em performace. contínuo aprimorando meus conhecimentos e sou
             apaixonado por desenvolvimento frontend.

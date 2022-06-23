@@ -16,7 +16,7 @@ export default function Home({ videos }) {
             </h1>
             <h2 className="text-gray-700 dark:text-gray-200 mb-4">
               Desenvolvedor Frontend no {' '}
-              <span className="font-semibold">Getninjas</span>
+              <span className="font-semibold">Sicredi</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
               Construindo páginas perfomáticas e entregando produtos
